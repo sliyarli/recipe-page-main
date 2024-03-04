@@ -1,0 +1,134 @@
+* {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  resize: none;
+}
+
+:root {
+  /* Primary Colors */
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--eggshell) !important;
+}
+
+.row {
+  margin: auto 0 !important;
+}
+
+.recipe-card,
+.recipe-img {
+  border-radius: 20px;
+}
+
+.recipe-prep-info,
+.recipe-desc,
+.recipe-nutrition-desc {
+  font-family: "Outfit", sans-serif;
+}
+
+.recipe-card {
+  padding: 36px;
+  width: 700px;
+  background-color: var(--white) !important;
+  gap: 25px;
+}
+
+.recipe-img {
+  width: 100%;
+}
+.recipe-name {
+  padding: 30px 0 15px 0;
+  font-family: "Young Serif", serif;
+  font-size: 35px;
+}
+.recipe-desc,
+.recipe-nutrition-desc {
+  color: #75746f;
+  font-weight: 500;
+}
+
+.recipe-prep-info {
+  background-color: var(--rose-white);
+}
+
+.recipe-prep-info h5,
+span {
+  font-weight: 700;
+}
+
+.recipe-prep-info h5 {
+  color: var(--dark-raspberry);
+}
+
+ul,
+ol {
+  line-height: 30px;
+  margin: 0 !important;
+}
+
+li {
+  color: #615f5e;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+  padding-left: 20px !important;
+}
+
+span,
+td:nth-child(odd) {
+  color: #675e5a;
+}
+
+.recipe-brown-heading {
+  font-family: "Young Serif", serif;
+  font-size: 30px;
+}
+
+.recipe-brown-heading,
+li::marker {
+  color: var(--nutmeg);
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  display: flex;
+  align-items: center !important;
+  padding: 15px 0 15px 30px;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid #75746f !important;
+}
+
+td:nth-child(odd) {
+  flex-basis: 50%;
+  font-weight: 500;
+}
+
+td:nth-child(even) {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .recipe-card {
+    width: 100%;
+  }
+}
